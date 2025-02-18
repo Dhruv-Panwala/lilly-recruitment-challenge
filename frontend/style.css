@@ -17,7 +17,6 @@ body {
 
 /* Disclaimer styles. DO NOT REMOVE OR EDIT UNLESS ABSOLUTELY NECESSARY */
 .disclaimer {
-    position: fixed;
     top: 0;
     width: 100%;
     background-color: black;
@@ -26,7 +25,30 @@ body {
     padding: 0.5rem;
     z-index: 1000;
     font-weight: bold;
-    height: 30px;
+    height: auto;
 }
 
 /* ---- Your custom styles below ---- */
+#medicineList{
+    height: 68vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5%; 
+    padding: 3%;
+    overflow-y: auto;
+}
+.medicineCard {
+    background-color: white;
+    width: 100%;
+    max-width: 150px;
+    height: 125px;
+    border-radius: 10px;
+    margin: 1%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    justify-items: center;
+}
+.medicineCard:hover {
+    transform: scale(1.05);
+}
