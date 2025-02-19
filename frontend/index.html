@@ -11,10 +11,10 @@
         Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
     </div>
     <header>
-        <h1>Medicine Tracker</h1><button onclick="calculateAverage()">Calculate average prices of all medicines</button>
+        <h1>Medicine Tracker</h1>
     </header>
     <main>
-        <input type="text" id="search" placeholder="Search for medicine" onchange="medicineSearch()"> <button onclick="addMedicine()">Add New Medicine</button>
+        <input type="text" id="search" placeholder="Search for medicine" onchange="medicineSearch()"> <button id="headerButton" onclick="addMedicine()">Add New Medicine</button><button id="headerButton" onclick="calculateAverage()">Calculate average prices of all medicines</button>
         <div id="medicineList"></div>
     </main>
     <script src="script.js"></script>

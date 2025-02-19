@@ -37,6 +37,24 @@ body {
     padding: 3%;
     overflow-y: auto;
 }
+button{
+    background-color: #d52b1e;
+    color: white;
+    /* margin-left: 3%; */
+    border: none;
+    cursor: pointer;
+}
+#headerButton{
+    background-color: #d52b1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 8%;
+}
+#headerButton:hover{
+    transform: scale(1.05);
+}
 .medicineCard {
     background-color: white;
     width: 100%;
